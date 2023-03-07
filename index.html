@@ -13,7 +13,7 @@
         <form>
             <h2>Ejercicio 1</h2>
             <label>Ingrese el dinero que tiene</label>
-            <input type="number" name="cap" id="dinero" pattern="[0-9]"/><br>
+            <input type="number" name="cap" id="dinero" pattern="[0-9]{1}"/><br>
             <input type="button" value="Calcular" onclick="interes()"/> <br>
             <input type="text" id="res" disabled/>      
         </form>
@@ -30,7 +30,7 @@
             <input type="number" name="venta3" id="venta3"pattern="[0-9]"/><br>
             <label>Ingrese el sueldo base</label>
             <input type="number" name="sueldobase" id="sueldo" pattern="[0-9]"/><br>
-            <input type="button" value="Calcular" onclick="sueldo()"/> <br>
+            <input type="button" value="Calcular" onclick="sueld()"/><br>
             <label>El suedo base es</label>
             <input type="number|" id="sueldoR" disabled/><br>
             <label>La comision del mes es</label>
@@ -45,7 +45,7 @@
         <form>
             <label>Ingrese el precio de su compra</label>
             <input type="number" name="compra" id="ticket"pattern="[0-9]"/><br>
-            <input type="button" value="Calcular" onclick="ejercicio3()"/> <br>
+            <input type="button" value="Calcular" onclick="descuento()"/> <br>
             <label>Debera pagar</label>
             <input type="number" id="compraresultado" disabled/>
         </form>
@@ -57,15 +57,11 @@
             <form>
                 <label>Ingrese la calificacion obtenida en el primer parcial</label>
                 <input type="number" name="calificacion1" id="calificacion1"/><br>
-                <label>Ingrese la calificacion obtenida en el segundo parcial</label>
-                <input type="number" name="calificacion2" id="calificacion2"/><br>
-                <label>Ingrese la calificacion obtenida en el tercer parcial</label>
-                <input type="number" name="calificacion3" id="calificacion3"/><br>
                 <label>Ingrese la calificacion obtenida en el examen final</label>
                 <input type="number" name="examenfinal" id="examenfinal"/><br>
                 <label>Ingrese la calificacion obtenida en el trabajo final</label>
                 <input type="number" name="trabajofinal" id="trabajofinal"/><br>
-                <input type="button" value="Calcular" onclick="ejercicio4()"/> <br>
+                <input type="button" value="Calcular" onclick="calis()"/> <br>
                 <label>La calificacion final sera</label>
                 <input type="number" id="calificacionfinal" disabled/>
             </form>
@@ -73,13 +69,11 @@
             <br>
         <h2>Ejercicio 5</h2>
         <form>
-            <label>Ingrese la cantidad de alumnos total que hay</label>
-            <input type="number" name="numeroalumnos" id="numeroalumnos"/><br>
             <label>Ingrese la cantidad de alumnos hombres que hay</label>
             <input type="number" name="alumnosh" id="alumnosh"/><br>
             <label>Ingrese la calificacion de alumnos mujeres que hay</label>
             <input type="number" name="alumnosm" id="alumnosm"/><br>
-            <input type="button" value="Calcular" onclick="ejercicio5()"/> <br>
+            <input type="button" value="Calcular" onclick="porcentaje()"/> <br>
             <label>Tiene un porcentaje del</label><br>
             <input type="number" id="porcentajealumnos" disabled/><label>De alumnos hombres</label><br>
             <input type="number" id="porcentajealumnas" disabled/><label>De alumnos mujeres</label><br>
@@ -89,7 +83,7 @@
         <h2>Ejercicio 6</h2> 
         <label>Ingrese su fecha de nacimiento:</label>
         <input type="date" name="fechan" id="fechan">
-        <input type="button" value="Calcular" onclick="ejercicio6()">
+        <input type="button" value="Calcular" onclick="edad()">
         <input type="text" id="edadc" style="width:300px;" disabled>
         <br>
         <br>
@@ -100,7 +94,7 @@
             <input type="number" name="n1" id="n1"/><br>
             <label>Ingrese un numero</label>
             <input type="number" name="n2" id="n2"/><br>
-            <input type="button" value="Calcular" onclick="ejercicio7()"/> <br>
+            <input type="button" value="Calcular" onclick="numSum()"/><br>
             <label>Resultado</label><input type="number" id="resuk" disabled/>
             </form>
             <br><br>
@@ -113,7 +107,7 @@
             <input type="number" name="nu2" id="nu2"/><br>
             <label>Ingrese un numero</label>
             <input type="number" name="nu3" id="nu3"/><br>
-            <input type="button" value="Calcular" onclick="ejercicio8()"/> <br>
+            <input type="button" value="Calcular" onclick="numMa()"/> <br>
             <label>Resultado</label><input type="number" id="resup" disabled/>
         </form>
         <h2>Ejercicio 9</h2>
@@ -122,7 +116,7 @@
             <input type="number" name="horastotales" id="horastotales" pattern="[0-9]"/><br>
             <label>Ingrese cuanto se le paga por hora al trabajador</label>
             <input type="number" name="salario" id="salario" pattern="[0-9]"/><br>
-            <input type="button" value="Calcular" onclick="ejercicio9()"/> <br>
+            <input type="button" value="Calcular" onclick="extras()"/> <br>
             <label>Se le debera pagar al trabajador: $</label><input type="number" id="salarioF" disabled/>
         </form>
         <br>
@@ -134,7 +128,7 @@
             <br>
             <label> Pago por mes</label>
             <input type="text" name="pagomes" id="pagomes" pattern="[0-9]"/> 
-            <input type="button" value="Calcular" onclick="ejercicio10()"/>
+            <input type="button" value="Calcular" onclick="repart()"/>
             <br>
             <label>La utilidad anual es:</label>
             <input type="text" id="utilidad" disabled/><br>
