@@ -112,8 +112,8 @@ function porcentaje()
       if (regex1.test(alM))
       {
         let totales=alH+alM
-        let poralh=(alH*100)/totales;
-        let poralm=(alM*100)/totales;
+        let poralh=(alH)/totales;
+        let poralm=(alM)/totales;
         document.getElementById("porcentajealumnos").value=poralh;
         document.getElementById("porcentajealumnas").value=poralm;
         }
@@ -151,7 +151,7 @@ function numSuma()
       {
         res=n1+n2;
       }
-      document.getElementById("resuk").value=res;
+      document.getElementById("res").value=res;
     }
     else
     {
